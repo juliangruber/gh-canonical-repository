@@ -1,0 +1,19 @@
+{
+  "name": "gh-canonical-repository",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "gh-canonical-repository",
+  "description": "Get the canonical GitHub repository of a git clone",
+  "scripts": {
+    "test": "prettier-standard-formatter *.js && standard"
+  },
+  "devDependencies": {
+    "prettier-standard-formatter": "^0.222222222222222.333333333333333",
+    "standard": "^9.0.2"
+  },
+  "dependencies": {
+    "git-remote-origin-url": "^2.0.0",
+    "got": "^6.7.1",
+    "parse-github-repo-url": "^1.4.0"
+  }
+}
