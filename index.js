@@ -13,7 +13,7 @@ module.exports = (dir, onGuess, cb) => {
   gitRemoteOriginUrl(dir)
     .then(url => {
       const guess = parseGitHubRepoUrl(url).filter(Boolean)
-      setImmediate(() => onGuess(guess))
+      setImmediate(() => onGuess(null, guess))
       const api = `api.github.com/repos/${guess[0]}/${guess[1]}`
       return got(api, { json: true })
     })

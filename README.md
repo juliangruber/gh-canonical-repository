@@ -13,7 +13,8 @@ const canonical = require('gh-canonical-repository')
 
 canonical(
   process.argv[2],
-  guess => {
+  (err, guess) => {
+    if (err) throw err
     console.log('guess', guess)
   },
   (err, repo) => {

@@ -2,7 +2,8 @@ const canonical = require('.')
 
 canonical(
   process.argv[2],
-  guess => {
+  (err, guess) => {
+    if (err) throw err
     console.log('guess', guess)
   },
   (err, repo) => {
