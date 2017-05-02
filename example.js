@@ -11,3 +11,7 @@ canonical(
     console.log('repo', repo)
   }
 )
+
+canonical
+  .promise(process.argv[2])
+  .then(repo => console.log('repo', repo, '(promise)'))

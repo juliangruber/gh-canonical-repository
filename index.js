@@ -24,3 +24,8 @@ module.exports = (dir, onGuess, cb) => {
       setImmediate(() => cb(err))
     })
 }
+
+module.exports.promise = dir => new Promise((resolve, reject) => {
+  const cb = (err, repo) => err ? reject(err) : resolve(repo)
+  module.exports(dir, cb)
+})

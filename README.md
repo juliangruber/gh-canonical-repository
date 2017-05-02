@@ -40,6 +40,8 @@ $ npm install gh-canonical-repository
 
 ### canonical(dir[, onGuess], cb)
 
+### canonical.promise(dir)
+
 ## License
 
 MIT
