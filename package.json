@@ -2,7 +2,7 @@
   "name": "gh-canonical-repository",
   "version": "2.0.0",
   "license": "MIT",
-  "repository": "gh-canonical-repository",
+  "repository": "juliangruber/gh-canonical-repository",
   "description": "Get the canonical GitHub repository of a git clone",
   "scripts": {
     "test": "prettier-standard-formatter *.js && standard"
