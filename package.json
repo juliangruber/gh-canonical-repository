@@ -1,6 +1,6 @@
 {
   "name": "gh-canonical-repository",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "license": "MIT",
   "repository": "juliangruber/gh-canonical-repository",
   "description": "Get the canonical GitHub repository of a git clone",
